@@ -1,0 +1,587 @@
+You are a world-class senior frontend engineer and product designer.
+
+Build a COMPLETE frontend-only production-grade web application called:
+
+# TRAVELOOP
+
+Traveloop is an AI-powered premium travel planning platform that helps users:
+
+* create trips
+* build itineraries
+* discover destinations
+* manage budgets
+* organize packing lists
+* save travel notes
+* share itineraries
+* receive AI-powered travel recommendations
+
+IMPORTANT:
+This task is FRONTEND ONLY.
+
+DO NOT build backend logic yet.
+DO NOT use Firebase, Supabase, or MongoDB.
+Use MOCK JSON DATA for all API responses.
+
+==================================================
+
+# TECH STACK
+
+==================================================
+
+Use:
+
+* React + Vite
+* Tailwind CSS
+* shadcn/ui
+* Framer Motion
+* React Router DOM
+* Zustand
+* Axios
+* React Hook Form
+* Zod
+* Recharts
+* Lucide React Icons
+
+==================================================
+
+# DESIGN GOAL
+
+==================================================
+
+The application should feel like:
+
+* Airbnb
+* Apple
+* Linear
+* Notion
+* Google Travel
+
+The UI must feel:
+
+* cinematic
+* premium
+* modern SaaS
+* immersive
+* fluid
+* elegant
+* startup quality
+
+DO NOT create generic CRUD UI.
+
+==================================================
+
+# DESIGN SYSTEM
+
+==================================================
+
+Create a DARK premium glassmorphism interface.
+
+COLOR PALETTE:
+
+Background: #0F0F0F
+Secondary Background: #171717
+Card Background: rgba(255,255,255,0.04)
+Primary Purple: #7C3AED
+Accent Purple: #A855F7
+Text Primary: #FFFFFF
+Text Secondary: #9CA3AF
+Border: rgba(255,255,255,0.08)
+
+==================================================
+
+# UI STYLE REQUIREMENTS
+
+==================================================
+
+Use:
+
+* glassmorphism cards
+* floating UI
+* soft shadows
+* gradients
+* rounded 2xl corners
+* modern typography
+* cinematic spacing
+* premium hover effects
+* smooth animations
+* blur effects
+* sticky navigation
+* animated transitions
+* responsive layouts
+* beautiful loading skeletons
+* shimmer loading
+* elegant empty states
+
+==================================================
+
+# RESPONSIVE REQUIREMENTS
+
+==================================================
+
+The application MUST work perfectly on:
+
+* mobile
+* tablet
+* desktop
+* ultrawide
+
+Use mobile-first responsive design.
+
+==================================================
+
+# FRONTEND PROJECT STRUCTURE
+
+==================================================
+
+Create this architecture:
+
+src/
+
+* app/
+
+  * router/
+  * providers/
+  * store/
+
+* components/
+
+  * ui/
+  * shared/
+  * auth/
+  * dashboard/
+  * trips/
+  * itinerary/
+  * budget/
+  * profile/
+  * notes/
+  * animations/
+
+* pages/
+
+  * auth/
+  * dashboard/
+  * trips/
+  * itinerary/
+  * profile/
+  * admin/
+
+* layouts/
+
+* hooks/
+
+* services/
+
+* utils/
+
+* constants/
+
+* assets/
+
+* styles/
+
+* types/
+
+==================================================
+
+# GLOBAL APP REQUIREMENTS
+
+==================================================
+
+Build:
+
+* responsive sidebar
+* premium navbar
+* protected routes UI
+* smooth page transitions
+* animated loading states
+* reusable modal system
+* reusable cards/buttons/forms
+* toast notifications
+* reusable empty states
+* premium onboarding feel
+
+==================================================
+
+# ROUTING STRUCTURE
+
+==================================================
+
+Create routes for:
+
+/
+/login
+/signup
+/dashboard
+/trips
+/trips/create
+/trips/:id
+/trips/:id/itinerary
+/trips/:id/budget
+/trips/:id/checklist
+/trips/:id/notes
+/profile
+/shared/:shareCode
+
+==================================================
+
+# STATE MANAGEMENT
+
+==================================================
+
+Use Zustand for:
+
+* auth state
+* trip state
+* UI state
+* theme state
+
+==================================================
+
+# PAGES TO BUILD
+
+==================================================
+
+==================================================
+
+# 1. LOGIN SCREEN
+
+==================================================
+
+Features:
+
+* cinematic split layout
+* animated background
+* glassmorphism auth card
+* email/password fields
+* password visibility toggle
+* login button
+* social login placeholders
+* signup redirect
+* forgot password UI
+
+Animations:
+
+* fade in
+* floating gradients
+* smooth transitions
+
+==================================================
+
+# 2. SIGNUP SCREEN
+
+==================================================
+
+Features:
+
+* full registration form
+* validation
+* animated UI
+* premium onboarding feel
+
+==================================================
+
+# 3. DASHBOARD SCREEN
+
+==================================================
+
+Features:
+
+* personalized welcome section
+* animated stats cards
+* recent trips
+* recommended destinations
+* AI recommendation cards
+* budget highlights
+* “Plan New Trip” CTA
+* trending destinations carousel
+
+Use beautiful travel imagery placeholders.
+
+==================================================
+
+# 4. CREATE TRIP SCREEN
+
+==================================================
+
+Features:
+
+* trip title
+* description
+* date picker
+* cover image upload UI
+* destination preview
+* save trip button
+* animated form sections
+
+==================================================
+
+# 5. MY TRIPS SCREEN
+
+==================================================
+
+Features:
+
+* trip cards
+* grid/list toggle
+* filters
+* search bar
+* trip status
+* edit/delete/view actions
+
+Trip cards should look premium and cinematic.
+
+==================================================
+
+# 6. ITINERARY BUILDER SCREEN
+
+==================================================
+
+THIS IS A CORE FEATURE.
+
+Build:
+
+* drag and drop city ordering UI
+* itinerary timeline
+* stop cards
+* activity assignment UI
+* day-wise planning layout
+* add stop button
+* timeline sidebar
+
+The experience should feel interactive and immersive.
+
+==================================================
+
+# 7. ITINERARY VIEW SCREEN
+
+==================================================
+
+Features:
+
+* calendar view
+* timeline view
+* city grouping
+* activity cards
+* travel summary
+* cost overview
+* export/share UI
+
+==================================================
+
+# 8. CITY SEARCH SCREEN
+
+==================================================
+
+Features:
+
+* modern search UI
+* search suggestions
+* city cards
+* popularity indicators
+* cost indicators
+* add-to-trip action
+
+Use mock destination data.
+
+==================================================
+
+# 9. ACTIVITY SEARCH SCREEN
+
+==================================================
+
+Features:
+
+* categories
+* filters
+* activity cards
+* ratings
+* images
+* add/remove interactions
+
+Categories:
+
+* Adventure
+* Food
+* Nature
+* Luxury
+* Historical
+* Nightlife
+
+==================================================
+
+# 10. BUDGET SCREEN
+
+==================================================
+
+Features:
+
+* pie charts
+* bar charts
+* spending breakdown
+* budget alerts
+* daily averages
+* travel expense summary
+
+Use Recharts.
+
+==================================================
+
+# 11. PACKING CHECKLIST SCREEN
+
+==================================================
+
+Features:
+
+* checklist categories
+* mark packed
+* animated check interactions
+* add/remove items
+* AI-generated suggestions UI
+
+==================================================
+
+# 12. NOTES / JOURNAL SCREEN
+
+==================================================
+
+Features:
+
+* timeline notes
+* rich note cards
+* timestamps
+* editable notes
+* modern writing UI
+
+==================================================
+
+# 13. PROFILE SCREEN
+
+==================================================
+
+Features:
+
+* avatar upload UI
+* user profile card
+* preferences
+* saved destinations
+* travel stats
+* editable profile
+
+==================================================
+
+# 14. SHARED PUBLIC ITINERARY SCREEN
+
+==================================================
+
+Features:
+
+* read-only itinerary
+* public share UI
+* copy trip button
+* social sharing section
+* premium public layout
+
+==================================================
+
+# ANIMATIONS
+
+==================================================
+
+Use Framer Motion heavily.
+
+Include:
+
+* page transitions
+* hover effects
+* stagger animations
+* floating gradients
+* reveal animations
+* card transitions
+* smooth sidebar animations
+* modal animations
+
+==================================================
+
+# MOCK DATA
+
+==================================================
+
+Create realistic mock JSON data for:
+
+* trips
+* cities
+* activities
+* users
+* budgets
+* itinerary timelines
+* notes
+* packing lists
+
+==================================================
+
+# COMPONENT REQUIREMENTS
+
+==================================================
+
+Create reusable:
+
+* buttons
+* inputs
+* cards
+* modals
+* dialogs
+* dropdowns
+* tabs
+* skeleton loaders
+* empty states
+* charts
+* sidebars
+* navbars
+
+==================================================
+
+# PERFORMANCE REQUIREMENTS
+
+==================================================
+
+Implement:
+
+* lazy loading
+* code splitting
+* optimized rendering
+* smooth scrolling
+* debounced search
+* reusable hooks
+
+==================================================
+
+# IMPORTANT ENGINEERING REQUIREMENTS
+
+==================================================
+
+All code must:
+
+* be production quality
+* use reusable abstractions
+* follow scalable architecture
+* avoid duplicated logic
+* include clean comments
+* use clean component composition
+* maintain consistent design language
+
+==================================================
+
+# FINAL GOAL
+
+==================================================
+
+The final frontend should feel like a real funded startup product built by elite frontend engineers.
+
+The UI should impress hackathon judges immediately through:
+
+* premium visuals
+* smooth UX
+* cinematic animations
+* polished interactions
+* modern layout system
+* immersive travel experience
